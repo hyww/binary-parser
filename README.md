@@ -138,9 +138,7 @@ with an alphabet. `options` is an object; following options are available:
 - `length ` - (either `length` or `readUntil` is required) Length of the buffer. Can be a number, string or a function.
     Use number for statically sized buffers, string to reference another variable and
     function to do some calculation.
-- `readUntil` - (either `length` or `readUntil` is required) If `'eof'`, then this parser
-    will read till it reaches end of the `Buffer` object.
-
+- `readUntil` - (either `length` or `readUntil` is required) Given string will be searched for using [`Buffer.indexOf`](https://nodejs.org/api/buffer.html#buffer_buf_indexof_value_byteoffset_encoding). If `'eof'`, then this parser will read till it reaches end of the `Buffer` object.
 
 ### array(name [,options])
 Parse bytes as an array. `options` is an object; following options are available:
